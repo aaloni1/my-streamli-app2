@@ -101,4 +101,35 @@ for post in blog_posts:
 
     st.markdown("---")
     
-    # Title for Achievements
+    # Title for Achievements section
+    st.subheader("Achievements")  # Title for the achievements section
+    
+    # List of achievements with placeholders for images
+    achievements = [
+        {
+            "title": "First Place in Regional Science Fair",
+            "description": "Awarded for the best project in the regional science fair.",
+            "image": "path/to/achievement1.jpg"  # Replace with your image path or URL
+        },
+        {
+            "title": "Honor Roll Student",
+            "description": "Recognized for academic excellence in the last school year.",
+            "image": "path/to/achievement2.jpg"  # Replace with your image path or URL
+        }
+    ]
+    
+    # Display each achievement
+    for achievement in achievements:
+        st.write(f"**{achievement['title']}**: {achievement['description']}")
+        
+        # Display the achievement image as a circle
+        if "image" in achievement:
+            st.markdown(
+                f"""
+                <div style="display: flex; justify-content: center;">
+                    <img src="{achievement['image']}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;" />
+                </div>
+                """, 
+                unsafe_allow_html=True
+            )
+        st.markdown("---")  # Separator for achievements
