@@ -12,10 +12,7 @@ blog_posts = [
         ]
     },
     {
-        "title": "Getting Started with Data Science",
-        "content": [
-            ("Overview", "Data Science is a field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data."),
-            ("Multi-Disciplinary", "It is a multi-disciplinary field that uses techniques from statistics, machine learning, and data analysis."),
+        
         ]
     }
 ]
