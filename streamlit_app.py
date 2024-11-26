@@ -3,8 +3,8 @@ import streamlit as st
 # Blog posts data
 blog_posts = [
     {
-        "title": "Adam Rey G. Aloni",
         "content": [
+            ("Name", "Adam Rey G. Aloni"),  # Included name in content
             ("Age", "19 years old"),
             ("Gender", "Male"),
             ("Birthdate", "October 27, 2005"),
@@ -16,23 +16,21 @@ blog_posts = [
     }
 ]
 
-# Title of the blog
-st.title("Adam Aloni's Blog")
-
 # Display blog posts
 for post in blog_posts:
-    st.subheader(post["title"])
-    
     # Display the image as a circle using HTML and CSS
     if "image" in post:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="border-radius: 75%; width: 150px; height: 150px; object-fit: cover;" />
+                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
         )
+    
+    # Title for the content section
+    st.subheader("About Me")  # Added title for the content section
     
     # Display content in a structured format
     for item in post["content"]:
