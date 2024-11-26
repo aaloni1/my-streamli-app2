@@ -27,6 +27,6 @@ for post in blog_posts:
     
     # Display the image with a 1:1 aspect ratio, without a caption
     if "image" in post:
-        st.image(post["image"], width=878∶, height=887)  # 1:1 aspect ratio without caption
+        st.image(post["image"], width=878, height=887)  # 1:1 aspect ratio without caption
     
     st.markdown("---")
