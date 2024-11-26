@@ -10,8 +10,7 @@ blog_posts = [
             ("Birthdate", "October 27, 2005"),
             ("Birthplace", "Quiapo, Manila"),
         ],
-        "author": "Adam Aloni",
-        "date": "2023-10-01"
+       
     },
     {
         "title": "Getting Started with Data Science",
