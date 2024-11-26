@@ -97,4 +97,4 @@ for post in blog_posts:
     school_df = pd.DataFrame(school_data)
 
     # Display the DataFrame as a table
-    st.table(s
+    st.table(school_df)
