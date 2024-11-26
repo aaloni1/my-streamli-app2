@@ -32,7 +32,7 @@ for post in blog_posts:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="width: 150px; height: 150px; object-fit: cover;" />
+                <img src="{post['image']}" style="width: 250px; height: 250px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
@@ -132,7 +132,7 @@ for post in blog_posts:
             st.markdown(
                 f"""
                 <div style="display: flex; justify-content: center;">
-                    <img src="{achievement['image']}" style="width: 100px; height: 100px; object-fit: cover;" />
+                    <img src="{achievement['image']}" style="width: 400px; height: 300px; object-fit: cover;" />
                 </div>
                 """, 
                 unsafe_allow_html=True
