@@ -97,39 +97,44 @@ for post in blog_posts:
     school_df = pd.DataFrame(school_data)
 
     # Display the DataFrame as a table
-    st.table(school_df)
+    st.table table(school_df)
 
-    st.markdown("---")
-    
-    # Title for Achievements section
-    st.subheader("Achievements")  # Title for the achievements section
-    
-    # List of achievements with placeholders for images
-    achievements = [
-        {
-            "title": "First Place in Regional Science Fair",
-            "description": "Awarded for the best project in the regional science fair.",
-            "image": "path/to/achievement1.jpg"  # Replace with your image path or URL
-        },
-        {
-            "title": "Honor Roll Student",
-            "description": "Recognized for academic excellence in the last school year.",
-            "image": "path/to/achievement2.jpg"  # Replace with your image path or URL
-        }
-    ]
-    
-    # Display each achievement
-    for achievement in achievements:
-        st.write(f"**{achievement['title']}**: {achievement['description']}")
-        
-        # Display the achievement image as a circle
-        if "image" in achievement:
-            st.markdown(
-                f"""
-                <div style="display: flex; justify-content: center;">
-                    <img src="{achievement['image']}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;" />
-                </div>
-                """, 
-                unsafe_allow_html=True
-            )
-        st.markdown("---")  # Separator for achievements
+st.markdown("---")
+
+# Title for Achievements section
+st.subheader("Achievements")  # Title for the achievements section
+
+# List of achievements with placeholders for images
+achievements = [
+    {
+        "title": "Certificate of Completion",
+        "description": "Awarded for completing a course or program.",
+        "image": "path/to/certificate_of_completion.jpg"  # Replace with your image path or URL
+    },
+    {
+        "title": "OJT Certificate of Completion",
+        "description": "Awarded for completing an on-the-job training program.",
+        "image": "path/to/ojt_certificate_of_completion.jpg"  # Replace with your image path or URL
+    },
+    {
+        "title": "Certificate of Merit (Graduated With Honor)",
+        "description": "Awarded for graduating with honors.",
+        "image": "path/to/certificate_of_merit.jpg"  # Replace with your image path or URL
+    }
+]
+
+# Display each achievement
+for achievement in achievements:
+    st.write(f"**{achievement['title']}**: {achievement['description']}")
+
+    # Display the achievement image as a circle
+    if "image" in achievement:
+        st.markdown(
+            f"""
+            <div style="display: flex; justify-content: center;">
+                <img src="{achievement['image']}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;" />
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
+    st.markdown("---")  # Separator for achievements
