@@ -32,7 +32,7 @@ for post in blog_posts:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="border-radius: 50%; width: 350px; height: 350px; object-fit: cover;" />
+                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
@@ -97,4 +97,4 @@ for post in blog_posts:
     school_df = pd.DataFrame(school_data)
 
     # Display the DataFrame as a table
-    st.table(school_df)
+    st.table(s
