@@ -10,10 +10,6 @@ blog_posts = [
             ("Birthdate", "October 27, 2005"),
             ("Birthplace", "Quiapo, Manila"),
         ]
-    },
-    {
-        
-        ]
     }
 ]
 
