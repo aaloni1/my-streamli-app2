@@ -9,7 +9,8 @@ blog_posts = [
             ("Gender", "Male"),
             ("Birthdate", "October 27, 2005"),
             ("Birthplace", "Quiapo, Manila"),
-        ]
+        ],
+        "image": "1701417749172.jpg"  # Replace with your image path or URL
     }
 ]
 
@@ -23,5 +24,9 @@ for post in blog_posts:
     # Display content in a structured format
     for item in post["content"]:
         st.write(f"**{item[0]}:** {item[1]}")
+    
+    # Display the image
+    if "image" in post:
+        st.image(post["image"], caption="This is an image of Adam Rey G. Aloni", use_column_width=True)
     
     st.markdown("---")
