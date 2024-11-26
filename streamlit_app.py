@@ -31,7 +31,7 @@ for post in blog_posts:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="border-radius: 50%; width: 400px; height: 400px; object-fit: cover;" />
+                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
@@ -43,5 +43,22 @@ for post in blog_posts:
     # Display content in a structured format
     for item in post["content"]:
         st.write(f"**{item[0]}:** {item[1]}")
+    
+    st.markdown("---")
+    
+    # Title for interests/hobbies section
+    st.subheader("Interests & Hobbies")  # Added title for interests/hobbies section
+    
+    # List of interests and hobbies
+    interests = [
+        "Baseball",
+        "Badminton",
+        "Gaming (specifically: Role Playing Games, Casual Games, and Fast-Paced Competitive Games)",
+        "Reading (specifically self-help books)"
+    ]
+    
+    # Display each interest as a bullet point
+    for interest in interests:
+        st.write(f"- {interest}")
     
     st.markdown("---")
