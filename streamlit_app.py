@@ -31,7 +31,7 @@ for post in blog_posts:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
+                <img src="{post['image']}" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
