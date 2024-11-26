@@ -3,14 +3,15 @@ import streamlit as st
 
 blog_posts = [
     {
-        "title": "The Benefits of Streamlit",
+        "title": "Adam Rey G. Aloni",
         "content": """
-        Streamlit is an open-source app framework for Machine Learning and Data Science projects. 
-        It allows you to create beautiful web apps for your machine learning projects with minimal effort. 
-        You can turn data scripts into shareable web apps in minutes, all in pure Python.
-        """,
-        "author": "John Doe",
-        "date": "2023-10-01"
+      Age: 19 years old 
+
+      Gender: Male
+
+      Birthdate: October 27, 2005
+
+      Birthplace: Quiapo, Manila,
     },
     {
         "title": "Getting Started with Data Science",
