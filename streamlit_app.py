@@ -1,5 +1,13 @@
 import streamlit as st
 
+# Create a logo for the blog
+st.markdown(
+    """
+    <h1 style="text-align: center; color: #4CAF50;">Adam's Blog</h1>
+    """,
+    unsafe_allow_html=True
+)
+
 # Blog posts data
 blog_posts = [
     {
