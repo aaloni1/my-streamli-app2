@@ -6,11 +6,8 @@ blog_posts = [
         "title": "Adam Rey G. Aloni",
         "content": """
       Age: 19 years old 
-
       Gender: Male
-
       Birthdate: October 27, 2005
-
       Birthplace: Quiapo, Manila""",
         }
     {
