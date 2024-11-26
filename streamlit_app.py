@@ -98,4 +98,3 @@ for post in blog_posts:
 
     # Display the DataFrame as a table
     st.table(school_df)
-``
