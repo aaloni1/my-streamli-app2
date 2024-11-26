@@ -25,8 +25,8 @@ for post in blog_posts:
     for item in post["content"]:
         st.write(f"**{item[0]}:** {item[1]}")
     
-    # Display the image with a 1:1 aspect ratio, without a caption
+    # Display the image without specifying width and height
     if "image" in post:
-        st.image(post["image"], width=878, height=887)  # 1:1 aspect ratio without caption
+        st.image(post["image"])  # Display image without aspect ratio specification
     
     st.markdown("---")
