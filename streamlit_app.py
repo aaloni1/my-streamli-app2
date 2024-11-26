@@ -9,8 +9,6 @@ blog_posts = [
             ("Gender", "Male"),
             ("Birthdate", "October 27, 2005"),
             ("Birthplace", "Quiapo, Manila"),
-        ],
-       
     },
     {
         "title": "Getting Started with Data Science",
