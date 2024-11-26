@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Sample blog posts data
+
 blog_posts = [
     {
         "title": "The Benefits of Streamlit",
@@ -25,7 +25,7 @@ blog_posts = [
 ]
 
 # Title of the blog
-st.title("My Blog")
+st.title("Adam Aloni's Blog")
 
 # Display blog posts
 for post in blog_posts:
@@ -33,14 +33,3 @@ for post in blog_posts:
     st.write(f"**By {post['author']} on {post['date']}**")
     st.write(post["content"])
     st.markdown("---")
-
-# Comment section
-st.subheader("Leave a Comment")
-comment = st.text_area("Your Comment:")
-if st.button("Submit Comment"):
-    if comment:
-        st.success("Thank you for your comment!")
-    else:
-        st.error("Please enter a comment before submitting.")
-
-# Note: In a real application, you would want to save comments to a database or file.
