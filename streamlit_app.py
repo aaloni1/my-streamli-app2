@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Create a logo for the blog with a gradient from white to black
 st.markdown(
@@ -62,3 +63,39 @@ for post in blog_posts:
         st.write(f"- {interest}")
     
     st.markdown("---")
+    
+    # Title for School Attended section
+    st.subheader("School Attended")  # Title for the school attended section
+    
+    # Create a DataFrame for the schools attended
+    school_data = {
+        "Level": [
+            "Elementary Schools Attended",
+            "Grade 1-3",
+            "Grade 4-5",
+            "Grade 6",
+            "High Schools Attended",
+            "Grade 7-8",
+            "Grade 9-10",
+            "Senior High Schools Attended",
+            "Grade 11-12"
+        ],
+        "School": [
+            "",
+            "Blessed Christian School De Sta Rosa",
+            "Elementary School Central 2",
+            "Blessed Christian School De Sta. Rosa",
+            "",
+            "Blessed Christian School De Sta. Rosa",
+            "Ritaglenda National Highschool",
+            "",
+            "Don Jose Ecleo Memorial College"
+        ]
+    }
+
+    # Convert the dictionary to a DataFrame
+    school_df = pd.DataFrame(school_data)
+
+    # Display the DataFrame as a table
+    st.table(school_df)
+``
