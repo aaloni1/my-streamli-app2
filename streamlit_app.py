@@ -28,7 +28,7 @@ for post in blog_posts:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
+                <img src="{post['image']}" style="border-radius: 75%; width: 150px; height: 150px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
