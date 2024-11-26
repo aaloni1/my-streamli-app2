@@ -23,9 +23,16 @@ st.title("Adam Aloni's Blog")
 for post in blog_posts:
     st.subheader(post["title"])
     
-    # Display the image at the top
+    # Display the image as a circle using HTML and CSS
     if "image" in post:
-        st.image(post["image"])  # Display image at the top of the post
+        st.markdown(
+            f"""
+            <div style="display: flex; justify-content: center;">
+                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
     
     # Display content in a structured format
     for item in post["content"]:
