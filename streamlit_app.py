@@ -1,15 +1,18 @@
 import streamlit as st
 
-
+# Blog posts data
 blog_posts = [
     {
         "title": "Adam Rey G. Aloni",
         "content": """
-      Age: 19 years old 
-      Gender: Male
-      Birthdate: October 27, 2005
-      Birthplace: Quiapo, Manila""",
-        }
+        Age: 19 years old 
+        Gender: Male
+        Birthdate: October 27, 2005
+        Birthplace: Quiapo, Manila
+        """,
+        "author": "Adam Aloni",
+        "date": "2023-10-01"
+    },
     {
         "title": "Getting Started with Data Science",
         "content": """
