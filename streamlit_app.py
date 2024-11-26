@@ -27,12 +27,12 @@ blog_posts = [
 
 # Display blog posts
 for post in blog_posts:
-    # Display the image as a circle using HTML and CSS
+    # Display the image
     if "image" in post:
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center;">
-                <img src="{post['image']}" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;" />
+                <img src="{post['image']}" style="width: 150px; height: 150px; object-fit: cover;" />
             </div>
             """, 
             unsafe_allow_html=True
@@ -127,12 +127,12 @@ for post in blog_posts:
     for achievement in achievements:
         st.write(f"**{achievement['title']}**: {achievement['description']}")
 
-        # Display the achievement image as a circle
+        # Display the achievement image without circular styling
         if "image" in achievement:
             st.markdown(
                 f"""
                 <div style="display: flex; justify-content: center;">
-                    <img src="{achievement['image']}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;" />
+                    <img src="{achievement['image']}" style="width: 100px; height: 100px; object-fit: cover;" />
                 </div>
                 """, 
                 unsafe_allow_html=True
