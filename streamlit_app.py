@@ -18,3 +18,4 @@ blog_posts = [
             ("Multi-Disciplinary", "It is a multi-disciplinary field that uses techniques from statistics, machine learning, and data analysis."),
         ]
     }
+]
