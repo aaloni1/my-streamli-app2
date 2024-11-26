@@ -1,9 +1,9 @@
 import streamlit as st
 
-# Create a logo for the blog
+# Create a logo for the blog with a gradient from white to black
 st.markdown(
     """
-    <h1 style="text-align: center; color: #4CAF50;">Adam's Blog</h1>
+    <h1 style="text-align: center; background: linear-gradient(to right, white, black); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Adam's Blog</h1>
     """,
     unsafe_allow_html=True
 )
