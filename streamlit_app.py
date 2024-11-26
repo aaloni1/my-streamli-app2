@@ -10,7 +10,7 @@ blog_posts = [
             ("Birthdate", "October 27, 2005"),
             ("Birthplace", "Quiapo, Manila"),
         ],
-        "image": "1701417749172.jpg"  # Replace with your image path or URL
+        "image": "mtp://Unisoc_itel_P55_11892193BS002243/Internal%20shared%20storage/Pictures/Remini"  # Replace with your image path or URL
     }
 ]
 
