@@ -109,17 +109,17 @@ for post in blog_posts:
         {
             "title": "Certificate of Completion",
             "description": "Awarded for completing a course or program.",
-            "image": "path/to/certificate_of_completion.jpg"  # Replace with your image path or URL
+            "image": "https://4b8e914bcf.cbaul-cdnwnd.com/8cbb878a5a782afad9cfd136a77e20c1/200000005-0e0360e037/CamScanner%2011-26-2024%2010.19%20%281%29_6.webp?ph=4b8e914bcf"  # Replace with your image path or URL
         },
         {
             "title": "OJT Certificate of Completion",
             "description": "Awarded for completing an on-the-job training program.",
-            "image": "path/to/ojt_certificate_of_completion.jpg"  # Replace with your image path or URL
+            "image": "https://4b8e914bcf.cbaul-cdnwnd.com/8cbb878a5a782afad9cfd136a77e20c1/200000007-55f4855f4a/CamScanner%2011-26-2024%2010.19%20%281%29_5.webp?ph=4b8e914bcf"  # Replace with your image path or URL
         },
         {
             "title": "Certificate of Merit (Graduated With Honor)",
             "description": "Awarded for graduating with honors.",
-            "image": "path/to/certificate_of_merit.jpg"  # Replace with your image path or URL
+            "image": "https://4b8e914bcf.cbaul-cdnwnd.com/8cbb878a5a782afad9cfd136a77e20c1/200000009-6b1c46b1c7/CamScanner%2011-26-2024%2010.19%20%281%29_4.webp?ph=4b8e914bcf"  # Replace with your image path or URL
         }
     ]
 
